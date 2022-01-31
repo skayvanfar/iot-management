@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'ir.sk.iot'
+// encoding
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenCentral()
+}
+
+wrapper {
+    gradleVersion = '7.2'
+    distributionType = Wrapper.DistributionType.ALL
+}
